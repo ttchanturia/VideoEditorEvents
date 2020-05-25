@@ -7,6 +7,13 @@ namespace VideoEditorEvents
 {
     class VideoEncoder
     {
+
+        //public delegate void VideEncodedEventHandler(object source, VideoEventArgs args);
+
+        //public event VideEncodedEventHandler VideoEncoded;
+
+        //OR simply
+
         public event EventHandler<VideoEventArgs> VideoEncoded;
 
         public void Encode(Video video)
